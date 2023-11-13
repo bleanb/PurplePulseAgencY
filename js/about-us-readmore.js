@@ -29,8 +29,17 @@ botonReadMore.addEventListener("click", () => {
     botonReadLess.style.display = "block"; // Muestra el botón Read Less
     parrafonuevo2.style.display= "block";
     parrafonuevo3.style.display= "block";
-    decoracionPreExpand.style.display= "none";
-    decoracionExpand.style.display= "block";
+
+    if (window.innerWidth < 1000) {
+      decoracionPreExpand.style.display= "none";
+      decoracionExpand.style.display= "none";
+      console.log("El ancho de la pantalla es menor a 1000 píxeles.");
+    } else {
+      decoracionPreExpand.style.display= "none";
+      decoracionExpand.style.display= "block";
+      console.log("El ancho de la pantalla es igual o mayor a 1000 píxeles.");
+    }
+    
     aboutUs.appendChild(botonReadLess); // Agrega el botón Read Less al div "about-us"
 
     // Desplaza la página hacia abajo 400px con desplazamiento suave
@@ -49,8 +58,15 @@ botonReadMore.addEventListener("click", () => {
     botonReadLess.style.display = "none"; // Oculta el botón Read Less
     parrafonuevo2.style.display= "none";
     parrafonuevo3.style.display= "none";
-    decoracionPreExpand.style.display= "block";
-    decoracionExpand.style.display= "none";
+    if (window.innerWidth < 1000) {
+      decoracionPreExpand.style.display= "none";
+      decoracionExpand.style.display= "none";
+      console.log("El ancho de la pantalla es menor a 1000 píxeles.");
+    }else {
+        decoracionPreExpand.style.display= "block";
+        decoracionExpand.style.display= "none";
+        console.log("El ancho de la pantalla es igual o mayor a 1000 píxeles.");
+    }
     // Desplaza la página al elemento "about-us" menos 200px
     const aboutUsElement = document.getElementById("about-us");
     window.scrollTo({

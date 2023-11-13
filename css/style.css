@@ -562,7 +562,7 @@ main
 {
     margin-top: 50px;
     font-family: 'Horizon';
-    font-size: 100px;
+    font-size: 6em;
     color: whitesmoke;
     text-shadow: 8px 3px 15px var(--color-header);
     z-index: 3;
@@ -783,7 +783,7 @@ main
 .home .slogan
 {
     font-family: 'Ubuntu';
-    font-size: 30px;
+    font-size: 2em;
     color: var(--color-hover-header);
 }
 
@@ -851,21 +851,21 @@ main
 
 .titulos-moviles
 {
-    font-size: 50px;
+    font-size: 1.8em;
     color: #774BC4;
 }
 
 .titulo-about-us
 {
     font-family: 'Retro2';
-    font-size: 40px;
+    font-size: 1.8em;
     color: var(--color-principal-logo);
 }
 
 .titulo-about-us .span-titulo-about-us
 {
     font-family: 'Retro';
-    font-size: 20px;
+    font-size: 0.5em;
 }
 
 .parrafo-about-us
@@ -889,7 +889,7 @@ main
     font-family: 'Ubuntu';
     width: 500px;
     height: 200px;
-    font-size: 20px;
+    font-size: 1em;
     color: whitesmoke;
     margin-top: -360px;
     display: none;
@@ -898,11 +898,8 @@ main
 
 .parrafo-oculto2
 {
-    font-family: 'Ubuntu';
     width: 500px;
     height: 200px;
-    font-size: 20px;
-    color: whitesmoke;
     display: none;
     margin-top: -10px;
 }
@@ -912,7 +909,7 @@ main
     font-family: 'Ubuntu';
     width: 500px;
     height: 200px;
-    font-size: 20px;
+    font-size: 1em;
     color: whitesmoke;
     display: none;
     margin-top: -100px;
@@ -992,7 +989,7 @@ main
     width: 300px;
     height: 50px;
     font-family: 'Horizon';
-    font-size: 30px;
+    font-size: 1.8em;
     color: var(--color-header);
     z-index: 2;
     margin-top: -65px;
@@ -2924,7 +2921,7 @@ video
 
 /* MEDIAS QUERIES AQUIIIII!!!  */
 
-@media (max-width: 350px){
+@media (max-width: 1000px){
 
     .servicios{
         height: 1800px;
@@ -2933,5 +2930,21 @@ video
     .container-contac-form {
         width: 900px;
     }
+    .newsletter-left{
+        display: none;
+    }
+
+    .decoracion-contact{
+        display: none;
+    }
+
+    .decoracion-about-us-3 {
+        display: none;
+    }
+    
+    .decoracion-about-us-2 {
+        display: none;
+    }
+        
 
 }
