@@ -2921,30 +2921,111 @@ video
 
 /* MEDIAS QUERIES AQUIIIII!!!  */
 
-@media (max-width: 1000px){
+@media (max-width: 1100px){
 
-    .servicios{
-        height: 1800px;
+  
+    /*Header*/
+    .container-left h1{
+        display: none;
     }
-
-    .container-contac-form {
-        width: 900px;
-    }
-    .newsletter-left{
+    .container-left h2{
         display: none;
     }
 
-    .decoracion-contact{
-        display: none;
+    .container-left .logo-header{
+        width: 40%;
+    }
+    .container-left{
+        height: 100px;
+        overflow: hidden;
+    }
+    /*home*/
+    .home{
+        width: 100%;
+    }
+    .titulo-home-page{
+        width: 110%;
+        margin-left: 150px;
+    }
+
+    .slogan{
+        margin-left: 150px;
+    }
+
+    .social-links-home{
+        margin-left: 150px;
+    }
+
+    .scrollea{
+        margin-left: 150px;
+    }
+
+    /* about us*/
+
+    .contenedor-texto-about-us{
+        width: 600px;
+        right: 60px;
+       
     }
 
     .decoracion-about-us-3 {
-        display: none;
+        opacity: 0;
+        z-index: -10;
     }
     
     .decoracion-about-us-2 {
-        display: none;
+        opacity: 0;
+        z-index: -10;
     }
-        
+    /*Servicios*/
+    .servicios{
+        height: 1800px;
+        width: 115%;
+    }
 
+    .separador-servicios{
+        margin-left: 80px !important;
+    }
+
+    /*contacto*/
+    .contac{
+        width: 115%;
+        height: 380px;
+    }
+
+    .decoracion-contact{
+        width: 50%;
+        margin-left: 560px;
+    }
+
+    /*nesletter*/
+
+    .newsletter{
+        margin-top: 100px;
+    }
+
+    .newsletter-left{
+        left: 0px;
+    }
+    .newsletter-right{
+        right: -150px;
+        background: transparent;
+    }
+
+    /*footer*/
+
+    .footer-wrapper{
+        width: 115%;
+    }
+    .footer-line{
+        width: 115%;
+    }
+
+
+  
+
+    
+
+   
+        
 }
