@@ -966,7 +966,7 @@ main
     height: 900px;
 }
 
-.separador-servicios
+.servicios .separador-servicios
 {
     position: absolute;
     width: 100%;
@@ -974,7 +974,17 @@ main
     margin-left: 0px;
 }
 
-.titulo-servicios
+.servicios .contenedor-de-servicios
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+
+}
+
+.servicios .contenedor-de-servicios .titulo-servicios
 {
     width: 300px;
     height: 50px;
@@ -987,23 +997,13 @@ main
     position: relative;
 }
 
-.contenedor-de-servicios
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 700px;
-
-}
-
-.contenedor-de-servicios img
+.servicios .contenedor-de-servicios img
 {
     position: relative;
     z-index: 2;
 }
 
-.animation-container
+.servicios .contenedor-de-servicios .animation-container
 {
     display: block;
     position: relative;
@@ -1046,7 +1046,7 @@ main
     }
 
 
-    .boom-container {
+    .servicios .contenedor-de-servicios .animation-container .boom-container {
         position: absolute;
         display: flex;
         width: 80px;
@@ -1276,20 +1276,7 @@ main
     100% {}
 }
 
-
-.boton-servicios
-{
-    font-family: 'Retro';
-    position: relative;
-    color: var(--color-principal-logo);
-    background-color: var(--color-bordes);
-    width: 120px;
-    height: 40px;
-    margin-top: 45px;
-    cursor: pointer;
-}
-
-.contenedor-cards-servicios
+.servicios .contenedor-de-servicios .contenedor-cards-servicios
 {
     display: flex;
     align-items: center;
@@ -1301,7 +1288,21 @@ main
     color: whitesmoke;
 }
 
-.contenedor-cards-servicios .card-servicios
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios .contenido-card-servicios .boton-servicios
+{
+    font-family: 'Retro';
+    position: relative;
+    color: var(--color-principal-logo);
+    background-color: var(--color-bordes);
+    width: 120px;
+    height: 40px;
+    margin-top: 45px;
+    cursor: pointer;
+}
+
+
+
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios
 {
     position: relative;
     width: 320px;
@@ -1313,7 +1314,7 @@ main
     transition: 0.5s;
 }
 
-.contenedor-cards-servicios .card-servicios::before
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios::before
 {
     content: '';
     position: absolute;
@@ -1329,7 +1330,7 @@ main
 
 
 
-.contenedor-cards-servicios .card-servicios::after
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios::after
 {
     content: '';
     position: absolute;
@@ -1345,33 +1346,33 @@ main
     transition: 0.5s;
 }
 
-.contenedor-cards-servicios .card-servicios:hover::before,
-.contenedor-cards-servicios .card-servicios:hover::after
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios:hover::before,
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios:hover::after
 {
     transform: skewX(0deg);
     left: 20px;
     width: calc(100% - 90px);
 }
 
-.contenedor-cards-servicios .card-servicios:nth-child(1)::before,
-.contenedor-cards-servicios .card-servicios:nth-child(1)::after
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios:nth-child(1)::before,
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios:nth-child(1)::after
 {
     background: linear-gradient(315deg, rgb(183, 0, 255), var(--color-principal-logo));
 }
 
-.contenedor-cards-servicios .card-servicios:nth-child(2)::before,
-.contenedor-cards-servicios .card-servicios:nth-child(2)::after
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios:nth-child(2)::before,
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios:nth-child(2)::after
 {
     background: linear-gradient(315deg, rgb(64, 0, 66), rgb(183, 0, 255));
 }
 
-.contenedor-cards-servicios .card-servicios:nth-child(3)::before,
-.contenedor-cards-servicios .card-servicios:nth-child(3)::after
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios:nth-child(3)::before,
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios:nth-child(3)::after
 {
     background: linear-gradient(315deg, pink, rgb(255, 36, 164));
 }
 
-.contenedor-cards-servicios .card-servicios span
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios span
 {
     display: block;
     position: absolute;
@@ -1383,7 +1384,7 @@ main
     pointer-events: none;
 }
 
-.contenedor-cards-servicios .card-servicios span::before
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios span::before
 {
     content: '';
     position: absolute;
@@ -1402,7 +1403,7 @@ main
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-.contenedor-cards-servicios .card-servicios:hover span::before {
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios:hover span::before {
     top: -50px;
     left: 50px;
     width: 100px;
@@ -1411,7 +1412,7 @@ main
 
 }
 
-.contenedor-cards-servicios .card-servicios span::after
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios span::after
 {
     content: '';
     position: absolute;
@@ -1429,7 +1430,7 @@ main
     animation-delay: -1s;
 }
 
-.contenedor-cards-servicios .card-servicios:hover span::after
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios:hover span::after
 {
     bottom: -50px;
     right: 50px;
@@ -1439,7 +1440,7 @@ main
 }
 
 
-.contenedor-cards-servicios .card-servicios .contenido-card-servicios
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios .contenido-card-servicios
 {
     position: relative;
     left: 0;
@@ -1453,7 +1454,7 @@ main
 
 }
 
-.contenedor-cards-servicios .card-servicios .contenido-card-servicios h2
+.servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios .contenido-card-servicios h2
 {
     font-family: 'Horizon';
     font-size: 15px;
@@ -2920,3 +2921,10 @@ video
 
 /* MEDIAS QUERIES AQUIIIII!!!  */
 
+@media (max-width: 350px){
+
+    .servicios{
+        height: 1800px;
+    }
+
+}
