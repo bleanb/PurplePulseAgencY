@@ -44,7 +44,6 @@ var ArrayVideos=[];
 //Inicio la pagia con el bloque uno seleccionado
 //Inicio la pagia con el bloque uno seleccionado
 fadeIn(textoExplicativo1);
-miVideo1.play();
 textoExplicativo1.style.zIndex = 1;
 growthMarketingLink.parentElement.classList.add('clicked');
 

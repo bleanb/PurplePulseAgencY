@@ -2136,6 +2136,24 @@ main
     padding-top: 150px;
 }
 
+.main-creative
+{
+    background: var(--color-main);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 150px;
+}
+
+.main-booster
+{
+    background: var(--color-main);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 150px;
+}
+
 .body-essential
 {
     width: 100%;
@@ -2381,7 +2399,7 @@ main
 .video-explicativo7
 {
     opacity: 0;
-    font-family: 'Retro';
+    font-family: 'Ubuntu';
     padding: 40px;
     color: whitesmoke;
     position: absolute;
@@ -2778,11 +2796,12 @@ video
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 800px;
+    height: 1000px;
 }
 
 .titulo-empleados
-{   
+{    
+    margin-top: 100px;
     font-family: 'Neon';
     position: relative;
     font-size: 6em;
@@ -2817,7 +2836,7 @@ video
 
 
 .container-card-empleados
-{
+{   
     position: relative;
     display: flex;
     justify-content: center;
@@ -2825,6 +2844,7 @@ video
     max-width: 1200px;
     flex-wrap: wrap;
     z-index: 1;
+    margin-top: 150px;
 }
 
 .container-card-empleados .card-empleados
@@ -3088,16 +3108,17 @@ video
     /* about us*/
 
     
+    
     .contenedor-texto-about-us{
         width: 900px;
     }
 
     .titulo-about-us{
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     .parrafo-about-us {
-        font-size: 2.5em !important;
+        font-size: 2.2em !important;
         height: 300px;
         width: 900px;
     }
@@ -3111,7 +3132,7 @@ video
 
     .parrafo-oculto2{
         margin-left: 90px;
-        margin-top: 350px;
+        margin-top: 450px;
     }
 
     .parrafo-oculto2 #miVideoIndex{
@@ -3371,8 +3392,7 @@ video
 
    
     .main-creative{
-        margin-top: 200px;
-        height: 4000px;
+        height: 4200px;
     }
 
     .contenedor-essential-rigth-2{
@@ -3418,9 +3438,105 @@ video
         
     }
 
+    .t1{
+        margin-left: 220px;
+    }
+
+    .t3{
+        margin-left: 350px;
+    }
+
+    .t4{
+        margin-left: 150px;
+    }
+
+    .t5{
+        margin-left: 150px;
+    }
+
     .t6{
         margin-left: 350px;
     }
 
+
+
+    .contenedor-essential-rigth-3{
+        width: 900px;
+        height: 4300px;
+        right: 0;
+    }
+
+    .contenedor-essential-rigth-3:last-child:after
+    {
+        box-shadow: 4380px 4380px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .main-booster{
+        height: 4900px;
+    }
+
+    .video-explicativo7{
+        opacity: 1;
+        z-index: 5;
+        margin-top: 3600px;
+    }
+
+    #miVideo7{
+        width: 800px;
+        
+    }
+
+    .t7{
+        margin-left: 230px;
+    }
+
+    .seccion-blog{
+        width: 115%;
+    }
+
+    .construccion{
+        margin-left: 230px;
+    }
+
+    .main-terms{
+        height: 1500px;
+    }
+
+    .container-terms{
+        margin-left: 180px;
+        width: 800px;
+        height: 1000px;
+    }
+
+    .container-terms .titulo-terms{
+        font-size: 3em !important; 
+    }
+
+    .container-terms p{
+        font-size: 1.5em;
+    }
+
+    .container-terms .subtitulo-terms{
+        font-size: 2em;
+    }
+
+    .box-terms .square:nth-child(6) {
+        margin-top: 400px;
+    }
+    .box-terms .square:nth-child(7) {
+        margin-right: 150px;
+    }
+
+    .box-terms .square:nth-child(2) {
+        margin-left: 100px;
+    }
+
+    .box-terms .square:nth-child(9) {
+        margin-left: 140px;
+    }
+
+    .main-empleados{
+        width: 115%;
+    }
 
 }
