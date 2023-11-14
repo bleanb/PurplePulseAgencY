@@ -183,7 +183,7 @@ header
 {
     text-decoration: none;
     color: #222;
-    font-size: 15px;
+    font-size: 1em;
     font-family: 'Horizon';
     font-weight: bold;
     transition: color 0.3s linear;
@@ -1428,6 +1428,7 @@ main
     animation: animate 2s ease-in-out infinite;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     animation-delay: -1s;
+
 }
 
 .servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios:hover span::after
@@ -2043,6 +2044,10 @@ main
 .social-links img:hover
 {
     transform: scale(1.5);
+}
+
+.footer-logo-palabra h5{
+    font-size: 20px;
 }
 
 .Product h3
@@ -2933,27 +2938,41 @@ video
     }
 
     .container-left .logo-header{
-        width: 40%;
+        width: 100%;
+        margin-top: -20px;
     }
     .container-left{
         height: 100px;
         overflow: hidden;
     }
+    .container-right .navegacion ol li a{
+        font-size: 1.3em;
+    }   
     /*home*/
     .home{
         width: 100%;
     }
     .titulo-home-page{
-        width: 110%;
+        width: 115%;
         margin-left: 150px;
     }
 
     .slogan{
         margin-left: 150px;
+        font-size: 3em !important;
     }
 
     .social-links-home{
         margin-left: 150px;
+        width: 50%;
+    }
+
+    .social-links-home a{
+        width: 40px;
+    }
+
+    .whatsapp-icon{
+        width: 100px;
     }
 
     .scrollea{
@@ -2963,9 +2982,34 @@ video
     /* about us*/
 
     .contenedor-texto-about-us{
-        width: 600px;
-        right: 60px;
-       
+        width: 900px;
+    }
+
+    .titulo-about-us{
+        font-size: 2.5em;
+    }
+
+    .parrafo-about-us {
+        font-size: 2em !important;
+        height: 300px;
+        width: 900px;
+    }
+    .boton {
+        margin-top: -100px!important;
+    }
+
+    .parrafo-oculto2{
+        margin-left: 130px;
+    }
+
+    .parrafo-oculto2 #miVideoIndex{
+        margin-top: -300px;
+        width: 700px !important;
+    }
+
+    .parrafo-oculto3{
+        font-size: 1.5em;
+        width: 1000px;
     }
 
     .decoracion-about-us-3 {
@@ -2979,13 +3023,52 @@ video
     }
     /*Servicios*/
     .servicios{
-        height: 1800px;
+        height: 3100px;
         width: 115%;
     }
 
+    .contenedor-cards-servicios{
+        margin-top: 150px;
+        margin: 200px;
+    }
+
+    .contenedor-cards-servicios h2{
+        font-size: 1.5em !important;
+        }  
+        
+    .contenedor-cards-servicios li{
+            font-size: 1.5em !important;
+            margin-left: 30px;
+    }  
+
+    
+
+    .card-servicios::before,
+    .card-servicios::after
+    {
+        width: 300px !important;
+        height: 700px !important;
+        margin-left: -50px;
+        margin-top: -100px;
+    }
+
+    .servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios span::before{
+        margin-top: -80px;
+    }
+   
+    .servicios .contenedor-de-servicios .contenedor-cards-servicios .card-servicios span::after{
+       margin: -30px;
+    }
+
+    .boton-servicios{
+        font-size: 1em;
+    }
+    
     .separador-servicios{
         margin-left: 80px !important;
+
     }
+
 
     /*contacto*/
     .contac{
@@ -3002,14 +3085,22 @@ video
 
     .newsletter{
         margin-top: 100px;
+        height: 800px;
     }
 
     .newsletter-left{
         left: 0px;
+        margin-top: 230px;
     }
     .newsletter-right{
         right: -150px;
         background: transparent;
+        margin-top: 300px;
+    }
+
+    .wavy{
+        margin-left: 180px;
+        margin-top: 100px;
     }
 
     /*footer*/
@@ -3021,11 +3112,38 @@ video
         width: 115%;
     }
 
+    .footer-wrapper h3{
+        font-size: 3em !important;
+        margin:20px ;
+    }
 
-  
+    .Company ul li a {
+        font-size: 1.5em !important;
+    }
 
-    
+    .Legal ul li a{
+        font-size: 1.5em !important;
+    }
 
-   
+    .Resources ul li a{
+        font-size: 1.5em !important;
+    }
+
+    .Product ul li a{
+        font-size: 1.5em !important;
+    }
+
+ .footer-logo h2{
+        font-size:  2em !important;
+    }
+
+    .social-links {
+        height: 50px;
+    }
+
+    .social-links img{
+        width: 50px;
+        height: 50px;
+    }
         
 }
