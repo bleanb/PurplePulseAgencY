@@ -38,19 +38,6 @@ var ArraydeTextos=[];
 var ArraydeLinks=[];
 var ArrayVideos=[];
 
-// Inicializar la opacidad en 0 para los textos explicativos
-textoExplicativo2.style.opacity = 0;
-textoExplicativo3.style.opacity = 0;
-textoExplicativo4.style.opacity = 0;
-textoExplicativo5.style.opacity = 0;
-textoExplicativo6.style.opacity = 0;
-
-//Inicializo los index de los texto
-textoExplicativo2.style.zIndex = 0;
-textoExplicativo3.style.zIndex = 0;
-textoExplicativo4.style.zIndex = 0;
-textoExplicativo5.style.zIndex = 0;
-textoExplicativo6.style.zIndex = 0;
 
 //Inicio la pagia con el bloque uno seleccionado
 fadeIn(textoExplicativo1);

@@ -23,10 +23,6 @@ const miVideo3 = document.getElementById('miVideo3');
 //Creo Array
 var ArraydeTextos=[];
 
-// Inicializar la opacidad en 0 para los textos explicativos
-textoExplicativo2.style.opacity = 0;
-textoExplicativo3.style.opacity = 0;
-
 //Inicio la pagia con el bloque uno seleccionado
 fadeIn(textoExplicativo1);
 textoExplicativo1.style.zIndex = 3;
